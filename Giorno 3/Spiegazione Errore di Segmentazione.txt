@@ -1,0 +1,1 @@
+La funzione 'Sacanf' richiede un puntatore a memoria come parametro per inserire il valore ricevuto dall'input standard (STDIN). Se si omette il simbolo '&' prima della variabile, si passa effettivamente un valore non inizializzato, causando un errore di segmentazione al primo inserimento.

@@ -1,0 +1,24 @@
+Il file BOF è un programma in C che ordina un vettore di 10 interi inseriti dall'utente in ordine crescente utilizzando l'algoritmo di ordinamento a bolle.
+
+Il codice si sviluppa in questo modo:
+
+1. Inizializza le variabili e l'array:
+   - `vector[10]` è un array di 10 interi che verranno inseriti dall'utente.
+   - `i`, `j`, `k` sono variabili di iterazione per i loop.
+   - `swap_var` è una variabile temporanea utilizzata per lo scambio di valori durante l'ordinamento.
+
+2. Chiede all'utente di inserire 10 interi utilizzando un ciclo for e la funzione `scanf()`.
+
+3. Stampa il vettore inserito dall'utente.
+
+4. Ordina il vettore utilizzando l'algoritmo di ordinamento a bolle:
+   - Viene eseguito un ciclo for esterno su `j` che scorre fino al penultimo elemento dell'array.
+   - All'interno di questo ciclo, c'è un altro ciclo for su `k` che scorre fino a `10 - j - 1`.
+   - Durante ogni iterazione, confronta gli elementi adiacenti `vector[k]` e `vector[k+1]`. Se `vector[k]` è maggiore di `vector[k+1]`, li scambia.
+   - Questo processo viene ripetuto finché il vettore è completamente ordinato.
+
+5. Stampa il vettore ordinato.
+
+6. Restituisce 0 per indicare il termine corretto del programma.
+
+Quindi, il programma chiede all'utente di inserire 10 numeri interi, li ordina utilizzando l'algoritmo di ordinamento a bolle e, di conseguenza, stampa il vettore ordinato.
