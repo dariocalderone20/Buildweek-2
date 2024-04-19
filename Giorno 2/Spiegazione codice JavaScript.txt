@@ -1,0 +1,1 @@
+Questo codice JavaScript raccoglie i valori dei cookie PHPSESSID e "security" dalla pagina web corrente. Quindi, invia questi valori a un server remoto tramite una richiesta GET. Il codice viene utilizzato per rubare le credenziali di sessione (cookie).
