@@ -1,0 +1,27 @@
+TRACCIA BASE:
+
+1)Sostituzione degli indirizzi IP delle macchine virtuali con quelli indicati nella traccia.
+
+2)Esecuzione di attacchi SQL Injection (Blind) su DVWA con livello di sicurezza basso.
+
+TRACCIA BONUS:
+
+Attacchi SQL Injection (Blind) su DVWA con livello di sicurezza medio.
+Differenza tra livello Low e Medium:
+Livello Low: le query SQL utilizzano apici singoli per le variabili (esempio: "SELECT first_name, last_name FROM users WHERE user_id "$id";").
+Livello Medium: le query SQL NON utilizzano apici singoli per le variabili (esempio: "SELECT first_name, last_name FROM users WHERE user_id - $id";").
+Esecuzione degli attacchi:
+
+Inserire una stringa esadecimale corrispondente al valore desiderato nell'area di testo del form.
+Esempio: credit_cards-0x637265646974546361726473 per ottenere le carte di credito.
+Invio del form.
+Il valore esadecimale viene convertito in ASCII e utilizzato per la query SQL.
+Limitazioni:
+
+Impossibile inserire un nuovo utente a causa della clausola UNION.
+La funzione mysql_query() accetta solo una query per volta.
+Riferimenti:
+
+Esadecimali: https://dev.mysql.com/doc/refman/8.0/en/hexadecimal-literals.html
+UNION: https://www.w3schools.com/SQl/sql_union.asp, https://dev.mysql.com/doc/refman/8.8/en/union.html
+mysql_query() PHP: https://www.php.net/manual/it/function.mysql-query.php
